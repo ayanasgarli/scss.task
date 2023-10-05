@@ -1,0 +1,80 @@
+.box{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    .box-img{
+        height: 50%;
+        overflow: hidden;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .book{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: .5s;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            background-color: #00000049 !important ; 
+            
+            button{
+                @include button($primary-color);
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%,-50%);        
+                &:hover{
+                    transform: scale(.9) translate(-55%,-55%);
+                    background-color: #e43d1b;
+                }
+            }
+        }
+        &:hover{
+            .book{
+                opacity: 1;
+            }
+            button{
+                top: 50%;
+            }
+        }    
+    }
+    .box-info{
+        padding: 10px 20px 20px;
+        .info{
+            color: #646464;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .price-details{
+            padding: 0 0 40px 0;
+            @extend %flex-space-between;
+            .price{
+                h2{
+                    font-size: 24px;
+                    color: #FF7A58;
+                }
+                p{
+                    color: rgb(128, 128, 128);
+                }
+            }
+            .details{
+                @extend %flex-space-between;
+                padding-top: 5px;
+                flex-direction: column;
+                color: rgb(128, 128, 128);
+                ul{
+                    display: flex;
+                    column-gap: 8px;
+                    color: rgb(255, 196, 0);
+                    font-size: 14px;
+                }
+            }
+        }    
+    }
+    
+}

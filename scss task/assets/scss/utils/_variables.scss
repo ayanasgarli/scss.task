@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$primary-color:#ed4a28;
+$primary-hover-color:#e43d1b;
+$main-font:"K2D";
+$second-font:"Poppins";
+$col-1:calc(100% / 12 - 20px);
+$col-2:calc(100% / 6 - 20px);
+$col-3:calc(100% / 4 - 20px);
+$col-4:calc(100% / 3 - 20px);
+$col-5:calc(100% / 12 *5 - 20px);
+$col-6:calc(100% / 2 - 20px);
+$col-7:calc(100% / 12 * 7 - 20px);
+$col-8:calc(100% / 3 * 2 - 20px);
+$col-9:calc(100% / 4 * 3 - 20px);
+$col-10:calc(100% / 6 * 5 - 20px);
+$col-11:calc(100% / 12 * 11 - 20px);
+$col-12:100%;
+$d-none: none !important;
